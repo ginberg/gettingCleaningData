@@ -16,42 +16,5 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 
 The reasoning behind my selection of features is that the assignment explicitly states "Extracts only the measurements on the mean and standard deviation for each measurement." To be complete, I included all variables having to do with mean or standard deviation.
 
-In short, for this derived dataset, these signals were used to estimate variables of the feature vector for each pattern:
-'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
-
-    tBodyAcc-XYZ
-    tGravityAcc-XYZ
-    tBodyAccJerk-XYZ
-    tBodyGyro-XYZ
-    tBodyGyroJerk-XYZ
-    tBodyAccMag
-    tGravityAccMag
-    tBodyAccJerkMag
-    tBodyGyroMag
-    tBodyGyroJerkMag
-    fBodyAcc-XYZ
-    fBodyAccJerk-XYZ
-    fBodyGyro-XYZ
-    fBodyAccMag
-    fBodyAccJerkMag
-    fBodyGyroMag
-    fBodyGyroJerkMag
-
-The set of variables that were estimated (and kept for this assignment) from these signals are:
-
-    mean(): Mean value
-    std(): Standard deviation
-
-Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
-
-    gravityMean
-    tBodyAccMean
-    tBodyAccJerkMean
-    tBodyGyroMean
-    tBodyGyroJerkMean
-
-Other estimates have been removed for the purpose of this excercise.
-
-Note: features are normalized and bounded within [-1,1].
-
-The resulting variable names are of the following form: tbodyaccmeanx, which means the mean value of tBodyAcc-XYZ.
+The resulting variable names are of the following form: tbodyaccmeanx, which means the mean value of tBodyAcc-XYZ and
+tbodyaccstdx, which means the standard deviation of tBodyAcc-XYZ.
